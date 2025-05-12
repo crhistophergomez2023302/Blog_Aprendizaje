@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "0307c260-6056-4595-9cb9-d8af24c5232d",
+		"name": "Blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37642998"
+	},
+	"item": [
+		{
+			"name": "Publication",
+			"item": [
+				{
+					"name": "Find publication by name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/blog/v1/publication/Tecnologia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog",
+								"v1",
+								"publication",
+								"Tecnologia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find publication by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/blog/v1/publication/ById/68213befdde15d90a214c6a0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog",
+								"v1",
+								"publication",
+								"ById",
+								"68213befdde15d90a214c6a0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "Crear comentario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": \"Cryss\",\r\n    \"text\": \"olaakjsdkjsadkjsahd\",\r\n    \"publicationId\": \"68213befdde15d90a214c6a5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/blog/v1/comment/createComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog",
+								"v1",
+								"comment",
+								"createComment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
